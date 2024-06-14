@@ -1,11 +1,11 @@
-site_name: EOEPCA Document Template
-site_url: https://eoepca.readthedocs.io/projects/template/en/latest/
-repo_url: https://github.com/EOEPCA/document-template/
+site_name: EOEPCA Data Access Building Block
+site_url: https://eoapi.dev/intro/
+repo_url: https://github.com/EOEPCA/data-access
 edit_uri: "edit/main/docs/"
 
 nav:
   - Home: home.html
-  - Building-block Name:
+  - Data Access:
     - index.md
     - Getting Started:
       - getting-started/quick-start.md
