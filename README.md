@@ -1,6 +1,3 @@
 # Data Access Building Block
 
-## Work in progress
-
-> [!NOTE]  
-> Status: initialized docs from template
+[![Documentation Status](https://readthedocs.org/projects/data-access/badge/?version=latest)](https://eoepca.readthedocs.io/projects/data-access/en/latest/?badge=latest)
