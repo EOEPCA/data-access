@@ -9,21 +9,21 @@ nav:
   - Resource Discovery: https://eoepca.readthedocs.io/projects/resource-discovery
   - Data Access:
     - index.md
-    - Getting Started:
-      - getting-started/quick-start.md
-      - getting-started/more-getting-started.md
+#    - Getting Started:
+#      - getting-started/quick-start.md
+#      - getting-started/more-getting-started.md
     - Design:
       - design/overview.md
-      - design/more-design.md
-    - Usage:
-      - usage/tutorials.md
-      - usage/howtos.md
-    - Administration:
-      - admin/configuration.md
-      - admin/maintenance.md
-    - API:
-      - api/endpoint-specification.md
-      - api/usage.md
+      - design/choice-of-libraries.md
+#    - Usage:
+#      - usage/tutorials.md
+#      - usage/howtos.md
+#    - Administration:
+#      - admin/configuration.md
+#      - admin/maintenance.md
+#    - API:
+#      - api/endpoint-specification.md
+#      - api/usage.md
 
 theme:
   # name: mkdocs
