@@ -19,7 +19,7 @@ To inform users which interfaces are available for any STAC collection in the ca
 OGC API Coverages, OGC WMS, OGC WMTS, OGC Tiles), this information is included in the STAC collection
 metadata.
 
-![Components and interfaces](../diagrams/service-component-architecture.drawio){: .centered}
+![Components and interfaces](../diagrams/service-component-architecture.drawio.png){: .centered}
 
 The web-based administration interface is based on STAC Admin and EOxElements allowing to specify
 which kind of data access services are enabled for which collections. All APIs are protected with the 
