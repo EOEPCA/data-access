@@ -21,8 +21,8 @@ nav:
 #    - Administration:
 #      - admin/configuration.md
 #      - admin/maintenance.md
-#    - API:
-#      - api/endpoint-specification.md
+    - API:
+      - api/endpoint-specification.md
 #      - api/usage.md
 
 theme:
@@ -58,6 +58,7 @@ extra_css:
 plugins:
   - autorefs
   - search
+  - swagger-ui-tag
   # - pub-debugger:
   #     console_log:
   #       enabled: true
