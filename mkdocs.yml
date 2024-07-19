@@ -36,6 +36,7 @@ theme:
   favicon: img/favicon.ico
   features:
     # Navigation
+    - navigation.footer
     - navigation.instant
     - navigation.tracking
     - navigation.tabs
