@@ -5,8 +5,6 @@ edit_uri: "edit/main/docs/"
 
 nav:
   - EOEPCA Documentation: https://eoepca.readthedocs.io/
-  - System Architecture: https://eoepca.readthedocs.io/projects/architecture/
-  - Resource Discovery: https://eoepca.readthedocs.io/projects/resource-discovery
   - Data Access:
     - index.md
 #    - Getting Started:
