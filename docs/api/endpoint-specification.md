@@ -25,3 +25,9 @@ Rendered version: [https://raster.eoapi.dev/docs](https://raster.eoapi.dev/docs)
 OpenAPI definition: [https://vector.eoapi.dev/api](https://vector.eoapi.dev/api)
 
 <swagger-ui src="https://vector.eoapi.dev/api">
+
+## Coverages API
+
+OpenAPI definition: [https://stacture.gtif.eox.at/openapi.json](https://stacture.gtif.eox.at/openapi.json)
+
+<swagger-ui src="https://stacture.gtif.eox.at/openapi.json">
