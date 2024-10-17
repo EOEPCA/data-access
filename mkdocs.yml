@@ -20,9 +20,10 @@ nav:
 #      - admin/configuration.md
 #      - admin/maintenance.md
     - API:
-      - api/endpoint-specification.md
-#      - api/usage.md
-
+      - api/stac-api.md
+      - api/raster-api.md
+      - api/vector-api.md
+      - api/coverages-api.md
 theme:
   # name: mkdocs
   # name: readthedocs
