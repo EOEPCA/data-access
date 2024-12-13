@@ -31,7 +31,7 @@ from stac_fastapi.pgstac.types.search import PgstacSearch
 from starlette.middleware import Middleware
 from starlette.middleware.cors import CORSMiddleware
 from starlette.requests import Request
-from starlette.responses import HTMLResponse
+from starlette.responses import HTMLResponse, JSONResponse
 from starlette.templating import Jinja2Templates
 from starlette_cramjam.middleware import CompressionMiddleware
 
@@ -164,6 +164,9 @@ async def viewer_page(request: Request):
         media_type="text/html",
     )
 
+@app.get("/healthz", response_class=JSONResponse)
+async def healthz_page(request: Request):
+    return JSONResponse({'ping': 'pong!'})
 
 if auth_settings.openid_configuration_url:
     oidc_auth = OpenIdConnectAuth.from_settings(auth_settings)
