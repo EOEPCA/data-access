@@ -11,7 +11,7 @@ class ApiSettings(BaseSettings):
 
     name: str = "eoAPI-stac"
     cors_origins: str = "*"
-    cors_methods: str = "GET,POST,OPTIONS"
+    cors_methods: str = "GET,POST,PUT,OPTIONS"
     cachecontrol: str = "public, max-age=3600"
     debug: bool = False
 
@@ -23,7 +23,7 @@ class ApiSettings(BaseSettings):
         "sort",
         "fields",
         "pagination",
-        "titiler",
+        "bulk_transactions",
         "transaction",
     ]
 

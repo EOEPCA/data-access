@@ -74,12 +74,10 @@ extensions_map = {
     ),
 }
 
+extensions = []
 if enabled_extensions := api_settings.extensions:
-    extensions = [
-        extensions_map.get(name)
-        for name in enabled_extensions
-        if name in extensions_map
-    ]
+    for extension in (extensions_map.get(name) for name in enabled_extensions):
+        extensions.append(extension)
 else:
     extensions = list(extensions_map.values())
 
