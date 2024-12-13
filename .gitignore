@@ -40,3 +40,6 @@ Session.vim
 
 .history
 .venv/
+
+uv.lock
+.env

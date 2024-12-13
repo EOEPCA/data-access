@@ -3,7 +3,9 @@ version: '3'
 services:
 
   stac-fastapi:
-    image: harbor.develop.eoepca.org/eoapi/stac:latest
+    build:
+      context: ../
+      dockerfile: ../../dockerfiles/Dockerfile.stac
     ports:
       - "${MY_DOCKER_IP:-127.0.0.1}:8081:8081"
     environment:
@@ -36,7 +38,7 @@ services:
       - "${MY_DOCKER_IP:-127.0.0.1}:5439:5432"
     command: postgres -N 500
     volumes:
-      - ./.pgdata:/var/lib/postgresql/data
+      - /tmp/eoapi/pgdata:/var/lib/postgresql/data
 
 networks:
   default:
