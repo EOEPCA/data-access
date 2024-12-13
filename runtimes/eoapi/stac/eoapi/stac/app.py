@@ -3,7 +3,6 @@
 import logging
 from contextlib import asynccontextmanager
 
-from eoapi.auth_utils import OpenIdConnectAuth, OpenIdConnectSettings
 from fastapi import FastAPI
 from fastapi.responses import ORJSONResponse
 from stac_fastapi.api.app import StacApi
@@ -49,7 +48,6 @@ except ImportError:
 templates = Jinja2Templates(directory=str(resources_files(__package__) / "templates"))  # type: ignore
 
 api_settings = ApiSettings()
-auth_settings = OpenIdConnectSettings()
 settings = Settings(enable_response_models=True)
 
 # Logs
@@ -133,10 +131,6 @@ api = StacApi(
         openapi_url="/api",
         docs_url="/api.html",
         redoc_url=None,
-        swagger_ui_init_oauth={
-            "clientId": auth_settings.client_id,
-            "usePkceWithAuthorizationCodeGrant": auth_settings.use_pkce,
-        },
     ),
     title=api_settings.name,
     description=api_settings.name,
@@ -167,14 +161,3 @@ async def viewer_page(request: Request):
 @app.get("/healthz", response_class=JSONResponse)
 async def healthz_page(request: Request):
     return JSONResponse({'ping': 'pong!'})
-
-if auth_settings.openid_configuration_url:
-    oidc_auth = OpenIdConnectAuth.from_settings(auth_settings)
-
-    restricted_prefixes = ["/collections", "/search"]
-    for route in app.routes:
-        if any(
-            route.path.startswith(f"{app.root_path}{prefix}")
-            for prefix in restricted_prefixes
-        ):
-            oidc_auth.apply_auth_dependencies(route, required_token_scopes=[])
