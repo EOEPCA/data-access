@@ -160,4 +160,13 @@ async def viewer_page(request: Request):
 
 @app.get("/healthz", response_class=JSONResponse)
 async def healthz_page(request: Request):
-    return JSONResponse({'ping': 'pong!'})
+    response = { "database_online": "false" }
+
+    try:
+        async with request.app.state.get_connection(request, "r") as conn:
+            await conn.fetchval("SELECT 1")
+            response["database_online"] = 'true'
+    except Exception as e:
+        response["database_error"] = str(e)
+
+    return JSONResponse(response)
