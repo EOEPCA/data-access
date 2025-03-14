@@ -12,7 +12,6 @@ nav:
 #      - getting-started/more-getting-started.md
     - Design:
       - design/overview.md
-      - design/choice-of-libraries.md
 #    - Usage:
 #      - usage/tutorials.md
 #      - usage/howtos.md
