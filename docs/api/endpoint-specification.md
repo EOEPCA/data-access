@@ -1,27 +1,27 @@
 # Specification
 
-The below API specifications are dynamically rendered from the OpenAPI definitions of a demo deployment of eoAPI at [eoapi.dev](https://eoapi.dev/). Once available, we will link to a live EOEPCA building block.
-
-The specifications are yet missing some of the endpoints to be added, for example for the OGC API Coverages.
+The below API specifications are dynamically rendered from the OpenAPI definitions of the EOEPCS development deployment at https://eoapi.develop.eoepca.org/.
 
 ## STAC API
 
-OpenAPI definition: [https://stac.eoapi.dev/openapi.json](https://stac.eoapi.dev/openapi.json)
+OpenAPI definition: <https://eoapi.develop.eoepca.org/stac/api>
 
-Rendered version: [https://stac.eoapi.dev/docs](https://stac.eoapi.dev/docs)
+Rendered version: <https://eoapi.develop.eoepca.org/stac/api.html>
 
-<swagger-ui src="https://stac.eoapi.dev/openapi.json">
+<swagger-ui src="https://eoapi.develop.eoepca.org/stac/api">
 
 ## Raster API
 
-OpenAPI definition: [https://raster.eoapi.dev/openapi.json](https://raster.eoapi.dev/openapi.json)
+OpenAPI definition: <https://eoapi.develop.eoepca.org/raster/api>
 
-Rendered version: [https://raster.eoapi.dev/docs](https://raster.eoapi.dev/docs)
+Rendered version: <https://eoapi.develop.eoepca.org/raster/api.html>
 
-<swagger-ui src="https://raster.eoapi.dev/openapi.json">
+<swagger-ui src="https://eoapi.develop.eoepca.org/raster/api">
 
 ## Vector API
 
-OpenAPI definition: [https://vector.eoapi.dev/api](https://vector.eoapi.dev/api)
+OpenAPI definition: <https://eoapi.develop.eoepca.org/vector/api>
 
-<swagger-ui src="https://vector.eoapi.dev/api">
+Rendered version: <https://eoapi.develop.eoepca.org/vector/api.html>
+
+<swagger-ui src="https://eoapi.develop.eoepca.org/vector/api">

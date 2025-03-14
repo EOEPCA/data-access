@@ -20,6 +20,7 @@ nav:
 #      - admin/maintenance.md
     - API:
       - api/endpoint-specification.md
+      - api/health-checks.md
 #      - api/usage.md
 
 theme:
