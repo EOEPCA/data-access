@@ -18,6 +18,14 @@ Rendered version: <https://eoapi.develop.eoepca.org/raster/api.html>
 
 <swagger-ui src="https://eoapi.develop.eoepca.org/raster/api">
 
+## Multidim API
+
+OpenAPI definition: <https://eoapi.develop.eoepca.org/multidim/api>
+
+Rendered version: <https://eoapi.develop.eoepca.org/multidim/api.html>
+
+<swagger-ui src="https://eoapi.develop.eoepca.org/multidim/api">
+
 ## Vector API
 
 OpenAPI definition: <https://eoapi.develop.eoepca.org/vector/api>
