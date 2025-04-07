@@ -25,3 +25,11 @@ OpenAPI definition: <https://eoapi.develop.eoepca.org/vector/api>
 Rendered version: <https://eoapi.develop.eoepca.org/vector/api.html>
 
 <swagger-ui src="https://eoapi.develop.eoepca.org/vector/api">
+
+## Multidimensional Dataset API
+
+OpenAPI definition: <https://eoapi.develop.eoepca.org/multidim/api>
+
+Rendered version: <https://eoapi.develop.eoepca.org/multidim/api.html>
+
+<swagger-ui src="https://eoapi.develop.eoepca.org/multidim/api">
