@@ -6,7 +6,7 @@ They are listed here:
 
 | API           | Health Endpoint                                     | Ok   | Auth    |
 |---------------|-----------------------------------------------------|------|---------|
-| Raster API    | <https://eoapi.develop.eoepca.org/raster/healthz>   | 200  | no auth |
-| Vector API    | <https://eoapi.develop.eoepca.org/vector/healthz>   | 200  | no auth |
-| Multidim API  | <https://eoapi.develop.eoepca.org/multidim/healthz> | 200  | no auth |
-| STAC API      | <https://eoapi.develop.eoepca.org/stac/_mgmt/ping>  | 200  | no auth |
+| Raster API    | <https://eoapi.apx.develop.eoepca.org/raster/healthz>   | 200  | no auth |
+| Vector API    | <https://eoapi.apx.develop.eoepca.org/vector/healthz>   | 200  | no auth |
+| Multidim API  | <https://eoapi.apx.develop.eoepca.org/multidim/healthz> | 200  | no auth |
+| STAC API      | <https://eoapi.apx.develop.eoepca.org/stac/_mgmt/ping>  | 200  | no auth |

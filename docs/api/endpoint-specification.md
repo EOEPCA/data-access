@@ -1,35 +1,35 @@
 # Specification
 
-The below API specifications are dynamically rendered from the OpenAPI definitions of the EOEPCS development deployment at https://eoapi.develop.eoepca.org/.
+The below API specifications are dynamically rendered from the OpenAPI definitions of the EOEPCS development deployment at https://eoapi.apx.develop.eoepca.org/.
 
 ## STAC API
 
-OpenAPI definition: <https://eoapi.develop.eoepca.org/stac/api>
+OpenAPI definition: <https://eoapi.apx.develop.eoepca.org/stac/api>
 
-Rendered version: <https://eoapi.develop.eoepca.org/stac/api.html>
+Rendered version: <https://eoapi.apx.develop.eoepca.org/stac/api.html>
 
-<swagger-ui src="https://eoapi.develop.eoepca.org/stac/api">
+<swagger-ui src="https://eoapi.apx.develop.eoepca.org/stac/api">
 
 ## Raster API
 
-OpenAPI definition: <https://eoapi.develop.eoepca.org/raster/api>
+OpenAPI definition: <https://eoapi.apx.develop.eoepca.org/raster/api>
 
-Rendered version: <https://eoapi.develop.eoepca.org/raster/api.html>
+Rendered version: <https://eoapi.apx.develop.eoepca.org/raster/api.html>
 
-<swagger-ui src="https://eoapi.develop.eoepca.org/raster/api">
+<swagger-ui src="https://eoapi.apx.develop.eoepca.org/raster/api">
 
 ## Vector API
 
-OpenAPI definition: <https://eoapi.develop.eoepca.org/vector/api>
+OpenAPI definition: <https://eoapi.apx.develop.eoepca.org/vector/api>
 
-Rendered version: <https://eoapi.develop.eoepca.org/vector/api.html>
+Rendered version: <https://eoapi.apx.develop.eoepca.org/vector/api.html>
 
-<swagger-ui src="https://eoapi.develop.eoepca.org/vector/api">
+<swagger-ui src="https://eoapi.apx.develop.eoepca.org/vector/api">
 
 ## Multidimensional Dataset API
 
-OpenAPI definition: <https://eoapi.develop.eoepca.org/multidim/api>
+OpenAPI definition: <https://eoapi.apx.develop.eoepca.org/multidim/api>
 
-Rendered version: <https://eoapi.develop.eoepca.org/multidim/api.html>
+Rendered version: <https://eoapi.apx.develop.eoepca.org/multidim/api.html>
 
-<swagger-ui src="https://eoapi.develop.eoepca.org/multidim/api">
+<swagger-ui src="https://eoapi.apx.develop.eoepca.org/multidim/api">
