@@ -7,25 +7,14 @@ nav:
   - EOEPCA Documentation: https://eoepca.readthedocs.io/
   - Data Access:
     - index.md
-#    - Getting Started:
-#      - getting-started/quick-start.md
-#      - getting-started/more-getting-started.md
     - Design:
       - design/overview.md
-#    - Usage:
-#      - usage/tutorials.md
-#      - usage/howtos.md
-#    - Administration:
-#      - admin/configuration.md
-#      - admin/maintenance.md
+      - design/ogc-api-maps.md
     - API:
       - api/endpoint-specification.md
       - api/health-checks.md
-#      - api/usage.md
 
 theme:
-  # name: mkdocs
-  # name: readthedocs
   name: material # https://squidfunk.github.io/mkdocs-material/creating-your-site/
   navigation_depth: 4
 
@@ -40,8 +29,6 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
-    # - navigation.expand
-    # - toc.integrate
     - navigation.top
     # Content
     - content.code.copy
@@ -58,14 +45,6 @@ plugins:
   - autorefs
   - search
   - swagger-ui-tag
-  # - pub-debugger:
-  #     console_log:
-  #       enabled: true
-  #       log_level: INFO
-  #     file_log:
-  #       enabled: false
-  #     zip_log:
-  #       enabled: false
 
 markdown_extensions:
   - tables
