@@ -13,6 +13,8 @@ nav:
     - API:
       - api/endpoint-specification.md
       - api/health-checks.md
+    - Administration:
+      - admin/autoscaling.md
 
 theme:
   name: material # https://squidfunk.github.io/mkdocs-material/creating-your-site/
