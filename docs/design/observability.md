@@ -6,6 +6,62 @@
 > cross-team dependencies in the *Assumptions* table (A1–A9) are not yet confirmed; feedback is
 > welcome inline.
 
+## Plain-language summary
+
+*For readers who aren't deep in the observability stack. The rest of the document is the
+detailed technical plan.*
+
+**The bigger picture.** [EOEPCA+](https://eoepca.org/) is a European Space Agency–funded effort
+to make satellite/Earth-observation **data platforms work together** instead of as isolated
+systems. It does this by publishing free, reusable software components called **"building
+blocks"** that organizations deploy to run their own platforms. This work concerns two of them:
+the **Data Access** building block (the services for searching, downloading and viewing EO data,
+built on [eoAPI](https://eoapi.dev/) — this repo) and the **Operations** building block
+(responsible for running and monitoring the platform).
+
+**The problem.** Today, when the Data Access services are running, there's no easy way to see how
+they're doing — fast or slow, working or failing, busy or idle, and *why* when something breaks.
+It's like driving with no dashboard.
+
+**The idea.** We add that dashboard using a widely-used, industry-standard approach
+(OpenTelemetry, with a working reference in
+[titiler-observability](https://github.com/developmentseed/titiler-observability)). Each service
+reports three kinds of signal about itself:
+
+- **Metrics** — the numbers: request counts, speed, error rates (the gauges).
+- **Logs** — the diary: a timestamped record of what happened.
+- **Traces** — the journey: following one request through the system to see where time went.
+
+These flow into **Grafana**, a single screen of charts where an operator sees everything at a
+glance. We switch this on **without rewriting the existing software**, by wrapping each service
+in a thin reporting layer.
+
+**What we deliver.**
+
+1. A **run-it-on-your-laptop demo** with everything wired together — the proof-it-works reference.
+2. The **real deployment**, plugged into the **monitoring EOEPCA already operates** (so we don't
+   build a second one — cheaper, no duplication).
+3. **Documentation**, including how this connects to the Operations building block.
+
+**Phasing and cost (focused-work days).** The core metrics + logs dashboards are ~2–3 days for a
+minimal version and ~3–5 days for the full demo-plus-live integration. Optional follow-ups (the
+request-"journey" tracing view, a breakdown of which datasets are most used, automated alerts)
+are separately funded; the whole programme end-to-end is roughly 6–11 days. Real elapsed time is
+longer, because the live-deployment step depends on coordinating with the Operations team. (See
+the [Effort summary](#effort-summary) for the detailed breakdown.)
+
+**Guardrails we built in.**
+
+- **Don't drown in detail** — tracking too many fine-grained things overwhelms and costs money,
+  so detailed breakdowns are deliberately limited and opt-in.
+- **Don't leak secrets** — monitoring can accidentally capture login tokens or user identities,
+  so we scrub those out (important because one service is the security gateway).
+- **Don't slow things down** — we cap the added overhead (under ~5%) and test for it.
+
+**In one sentence:** we're giving EOEPCA+'s data-access services a proper monitoring dashboard —
+built on industry standards, plugged into the monitoring EOEPCA already runs, delivered
+cheap-first with optional extras, and with sensible guardrails on cost, privacy and performance.
+
 ## Context
 
 EOEPCA+ requires the Data Access Building Block (built on **eoAPI**) to expose monitoring &
