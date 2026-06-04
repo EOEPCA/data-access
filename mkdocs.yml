@@ -10,6 +10,7 @@ nav:
     - Design:
       - design/overview.md
       - design/ogc-api-maps.md
+      - design/observability.md
     - API:
       - api/endpoint-specification.md
       - api/health-checks.md
