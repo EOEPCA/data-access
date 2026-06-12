@@ -14,6 +14,7 @@ nav:
       - api/endpoint-specification.md
       - api/health-checks.md
     - Administration:
+      - admin/auth.md
       - admin/autoscaling.md
 
 theme:
