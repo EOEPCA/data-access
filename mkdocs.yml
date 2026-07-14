@@ -10,6 +10,7 @@ nav:
     - Design:
       - design/overview.md
       - design/ogc-api-maps.md
+      - design/titiler-pycsw.md
     - API:
       - api/endpoint-specification.md
       - api/health-checks.md
@@ -57,7 +58,11 @@ markdown_extensions:
   - sane_lists
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
