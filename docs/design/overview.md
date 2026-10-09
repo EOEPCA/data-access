@@ -20,5 +20,6 @@ The Data Access building block also connects to a web-based STAC data administat
 based on [STAC Manager](https://github.com/developmentseed/stac-manager) that allows for small
 manual edits of STAC collection and item information.
 
-Ingress-based authentication and authorizatoin services as well as API gateway functions are added 
-by integration with the IAM Building Block.
+The STAC API uses [STAC Auth Proxy](https://github.com/developmentseed/stac-auth-proxy) to decide who
+may read and write each collection, based on logins from the IAM Building Block. See
+[STAC API Access Control](../admin/auth.md).
